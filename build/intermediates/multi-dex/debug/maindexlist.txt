@@ -1,0 +1,11 @@
+
+com/droidupdate/BaseApplication.class
+[NBSAgent.debug] NetworkBench begin
+[NBSAgent.info] project root:H:\patch\DroidUpdate
+com/droidupdate/BootReceiver.class
+com/droidupdate/MainActivity.class
+com/droidupdate/R$layout.class
+com/droidupdate/R.class
+com/droidupdate/jni/PatchUtil.class
+com/droidupdate/R$id.class
+com/droidupdate/R$menu.class

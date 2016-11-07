@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+    }
+}
+apply plugin: 'android'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.cheyipai.ui"
+        minSdkVersion 14
+        targetSdkVersion 19
+        multiDexEnabled true
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "VCCHSQgOrl825tYLMBUr03",
+                GETUI_APP_KEY   : "DOlSfg0yaBAVerJG0PoPQ3",
+                GETUI_APP_SECRET: "pJpSbqB2YCA5lfDiTlDvj4",
+                PUSH_ACTION     : "com.igexin.sdk.action.VCCHSQgOrl825tYLMBUr03",
+                PACKAGE_NAME    : applicationId
+        ]
+//        ndk {
+//            moduleName "y-patch-jni"       //生成的so名字
+//            abiFilters "armeabi", "armeabi-v7a"
+//            stl = "stlport_static"
+//        }
+    }
+
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}
+

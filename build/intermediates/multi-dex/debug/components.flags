@@ -1,0 +1,45 @@
+-injars 'H:\patch\DroidUpdate\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'H:\patch\DroidUpdate\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'E:\sdk\build-tools\24.0.0\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration 'H:\patch\DroidUpdate\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.droidupdate.BaseApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.droidupdate.MainActivity {
+    <init>();
+}
+
+-keep class com.droidupdate.BootReceiver {
+    <init>();
+}
+
+-keep class com.lzy.okhttpserver.download.DownloadService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

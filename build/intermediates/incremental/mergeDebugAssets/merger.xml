@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="1.0.1"><source path="H:\patch\DroidUpdate\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\assets"/></dataSet><dataSet config="main"><source path="H:\patch\DroidUpdate\assets"/><source path="H:\patch\DroidUpdate\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="H:\patch\DroidUpdate\build-types\debug\assets"/></dataSet></merger>

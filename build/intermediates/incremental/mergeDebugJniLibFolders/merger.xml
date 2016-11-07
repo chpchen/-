@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="H:\patch\DroidUpdate\libs"><file name="armeabi/libDroidUpdate.so" path="H:\patch\DroidUpdate\libs\armeabi\libDroidUpdate.so"/><file name="armeabi-v7a/libDroidUpdate.so" path="H:\patch\DroidUpdate\libs\armeabi-v7a\libDroidUpdate.so"/></source></dataSet><dataSet config="debug"><source path="H:\patch\DroidUpdate\build-types\debug\jniLibs"/></dataSet></merger>
