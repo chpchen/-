@@ -13,6 +13,8 @@ import java.io.File;
  */
 public class AppUtils {
 
+
+
 	/**
 	 * 安装一个应用程序
 	 * @param context
