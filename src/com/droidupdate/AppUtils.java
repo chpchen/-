@@ -33,5 +33,7 @@ public class AppUtils {
 //		intent.setData(Uri.fromFile(apkfile));
 		intent.setDataAndType(Uri.fromFile(apkfile), "application/vnd.android.package-archive");
 		context.startActivity(intent);
+
+//		git 测试1
 	}
 }
