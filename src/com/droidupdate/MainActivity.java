@@ -20,6 +20,10 @@ public class MainActivity extends Activity {
     private static final String tag = "MainActivity";
 
 
+    /**
+     * git 测试2
+     * @param savedInstanceState
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
